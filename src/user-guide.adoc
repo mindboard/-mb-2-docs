@@ -32,7 +32,7 @@ These below features that are planned for future updates.
 
 
 [NOTE]
-In future updates details, see last section *Under developing features* in ths document.
+In details, see last section *Under developing features* in ths document.
 
 
 === Requirement
