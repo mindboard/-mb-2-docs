@@ -1,0 +1,13 @@
+= MindBoard 2 User Guide
+Tomoaki Oshima <http://www.mindboardapps.com/>
+:doctype: book
+:source-highlighter: coderay
+:toc: left
+:sectnums:
+:sectanchors:
+:icons: font
+:imagesdir: ../images
+
+This document explains MindBoard 2 Version 0.6.1.
+
+include::user-guide.adoc[]
