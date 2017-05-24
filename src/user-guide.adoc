@@ -6,7 +6,7 @@ image::screenshots/mind-mapping-example.png[MindBoard 2]
 
 === Overview
 
-MindBoard 2 is a simple mindmapping application with handwriting for Android tablets.
+MindBoard 2 is a simple mind mapping application with handwriting for Android tablets.
 
 It's supported Finger or Stylus input. + 
 If your using Android device is supported native Stylus, this app starts as Stylus input mode, or this app starts as Finger input mode.
@@ -15,7 +15,7 @@ If your using Android device is supported native Stylus, this app starts as Styl
 === Concept
 
 Simple and Standard +
-This app is being expected that the best and standard mindmaping with handwriting application for Android tablets.
+This app is being expected that the best and standard mind mapping with handwriting application for Android tablets.
 
 
 === Key Features
@@ -74,7 +74,7 @@ There are three activities.
 
 image::screenshots/main-activity.png[Main Activity]
 
-This is for mindmapping. +
+This is for mind mapping. +
 There are two mode, *Map Edit Mode* and *Node Edit Mode*. +
 Using buttons on the actionbar, it's possible to open, save, and sync current active document with Google Drive.
 
@@ -85,7 +85,7 @@ Using buttons on the actionbar, it's possible to open, save, and sync current ac
 
 image::screenshots/main-activity-map-edit-mode.png[Map Edit Mdoe]
 
-This mode is for freely creating nodes to do mindmapping.
+This mode is for freely creating nodes to do mind mapping.
 
 
 ====== Entering Node Edit Mode
