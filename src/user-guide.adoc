@@ -142,7 +142,7 @@ image::screenshots/main-activity-remove-node-icon.png[Delete Node Button]
 
 ===== Node Edit Mode
 
-image::screenshots/main-activity-node-edit-mode.png[Main Activity]
+image::screenshots/main-activity-node-edit-mode.png[Node Edit Mode]
 
 This mode is for drawing your thought on a node.
 
@@ -154,10 +154,25 @@ Under using native style, it's also possible to use double tap guesture with a f
 
 ====== Tool Switcher
 
+image::screenshots/main-activity-node-edit-mode-tool-sw-non-spen.png[Tool Switcher"]
+
+There are four tools, Pen / Eraser / Selection / Zoom. +
+In order to switch a tool, tap the tool.
+
+[NOTE]
+The pen color is black only for now. +
+Mulitple pen colors plugin feature is planned.
+
+====== Tool Switcher ( in the case of Native Stylus Device )
+
 image::screenshots/main-activity-node-edit-mode-tool-sw.png[Tool Switcher"]
 
 There are three tools, Pen / Eraser / Selection. +
 In order to switch a tool, tap the tool.
+
+[NOTE]
+The pen color is black only for now. +
+Mulitple pen colors plugin feature is planned.
 
 
 ==== Current Active Document File Management
