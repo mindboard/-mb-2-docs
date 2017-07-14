@@ -125,7 +125,7 @@ image::screenshots/editor-map-edit-mode.png[Editor (Map Edit Mode)]
 Toolbar (Right-Top)
 
 * image:icons/change-branch-color.png[Change Branch Color] Change selected node branch color.
-* image:icons/export-as-pdf.png[Export as PDF] Export active document as PDF into Google Drive.
+* image:icons/export-as-pdf.png[Export as PDF] Export active document as PDF into Google Drive. ( PDF Export Plugin is needed. )
 
 Toolbar (Left-Bottom)
 
@@ -221,7 +221,7 @@ Right-Top corner
 * image:icons/close-node-edit-mode.png[Back To Map Edit Mode] Back to the *Map Edit Mode*
 
 [NOTE]
-Under using native style, it’s also possible to use double tap guesture with a finger.
+Under checked *Use Native Style* in the Settings, it’s also possible to back to the *Map Edit Mode* by double tap guesture with a finger.
 
 
 ===== Tool Switcher
@@ -236,7 +236,7 @@ Changing Pen Thickness does not support now.
 Mulitple pen thickness plugin feature is planned.
 
 
-===== Tool Switcher ( in the case of Native Stylus Mode )
+===== Tool Switcher ( in the case of checked *Use Native Stylus* option  )
 
 image::screenshots/main-activity-node-edit-mode-tool-sw.png[Tool Switcher]
 
@@ -286,7 +286,7 @@ There is only one plugin *PDF Export* now.
 
 ==== How to buy
 
-Tap *BUY* Button, entering purchase the plugin process.
+Tap *BUY* Button and entering purchase the plugin process.
 
 image::screenshots/purchasing-pdf-export-plugin.png[Purchasing PDF Export Plugin]
 
