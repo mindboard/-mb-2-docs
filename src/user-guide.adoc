@@ -2,15 +2,14 @@
 = MindBoard 2 User Guide
 == Introduction
 
-image::screenshots/mind-mapping-example.png[MindBoard 2]
+image::screenshots/an-example-map.png[MindBoard 2]
 
 === Overview
 
 MindBoard 2 is a simple mind mapping application with handwriting for Android tablets.
 
 It's supported Finger or Stylus input. + 
-If your using Android device is supported native Stylus, this app starts as Stylus input mode, or this app starts as Finger input mode.
-
+You can change these mode by using the __Use Native Stylus__ option in Settings.
 
 === Concept
 
@@ -21,28 +20,27 @@ This app is being expected that the best and standard mind mapping with handwrit
 === Key Features
 
 * Directly outputing your thought by using Finger or Stylus
-* Multiple mindmap in one document
+* Multiple mindmaps ( central nodes ) in one document
 * PDF Export (Plugin)
-* Syncing documents with Google Drive
+* Input: Stylus, Image and Text
+* Open, Save and Sync documents with Google Drive
 
-These below features that are planned for future updates.
-
-* Image Import
-* Text Input
-
+and so on.
 
 [NOTE]
-In details, see last section *Under developing features* in ths document.
+In details, see last section *Under developing features* in this document.
 
 
 === Requirement
 
 * Android 4.4 Kitkat or newer.
 
-This app is designed for Galaxy Note series and Galaxy Tab A with S-Pen.
+This app is designed for Android Tables.
+
+Galaxy Note series and Galaxy Tab A with S-Pen.
 
 [NOTE]
-In order to achieve the best performance, it's recommended to use native stylus Android tablets like Galaxy Note or Galaxy Tab A with S-Pen.
+For the best mindmapping experience, it's recommended to use Native Stylus ( S-Pen or Z-Stylus ) Android tablets.
 
 
 === Installation
@@ -63,96 +61,170 @@ https://www.facebook.com/mindboardapps[Facebook] / https://twitter.com/mindboard
 
 === Overview
 
-There are three activities.
+There are four screens.
 
-1. Editing mindmap : *(1) Main Activity*
-1. File buffers : *(2) File Manager Activity*
-1. Plugins *(3) Plugins Activity*
+- (1)File Manager
+- (2)Editor
+- (3)Settings
+- (4)Plugins
 
+Use the bottom navigation to switch the screen. 
 
-=== Main Activity
-
-image::screenshots/main-activity.png[Main Activity]
-
-This is for mind mapping. +
-There are two mode, *Map Edit Mode* and *Node Edit Mode*. +
-Using buttons on the actionbar, it's possible to open, save, and sync current active document with Google Drive.
+image::screenshots/bottom-navigation-overview.png[Bottom Navigation]
 
 
-==== Editing Active Document
+=== (1)File Manager
 
-===== Map Edit Mode
+This is for documents management.
+There are *Primary* / *Archive* Folder.
 
-image::screenshots/main-activity-map-edit-mode.png[Map Edit Mdoe]
+image::screenshots/file-manager-overview.png[File Manager]
 
-This mode is for freely creating nodes to do mind mapping.
-
-
-====== Entering Node Edit Mode
-
-Double tap a node.
+* Tap the icon to switch image:icons/primary-folder.png[Primary Folder] *Primary* / image:icons/archive-folder.png[Archive Folder] *Archive*
 
 
-====== Creating Child Node
+==== Primary Folder
 
-Using *a child node create handle* on the node.
+This folder manage primary documents.
+
+image::screenshots/file-manager-primary.png[File Manager (Primary Folder)]
+
+* image:icons/new-page.png[New Document] Add new document
+* image:icons/download-page.png[Download Document] Open document from Google Drive
+* image:icons/upload-page.png[Upload Document] Save As document into Google Drive
+* image:icons/sync-page.png[Sync Document] Sync document with Google Drive
+* image:icons/move-to-archive.png[Move Document to Archive] Move document into Archive Folder
+
+
+==== Archive Folder
+
+This folder manage archive documents.
+
+image::screenshots/file-manager-archive.png[File Manager (Archive Folder)]
+
+* image:icons/revert-from-archive.png[Revert Document from Archive] Revert selected document to Primary Folder.
+* image:icons/empty-trash.png[Empty Archive] Clear all documents in this folder.
+
+
+=== (2)Editor
+
+This is for mind mapping.
+
+image::screenshots/editor-overview.png[Editor]
+
+There are two mode, *Map Edit Mode* and *Node Edit Mode*.
+
+
+==== Map Edit Mode
+
+This mode is for freely creating and organizing nodes in order to do mind mapping.
+
+image::screenshots/editor-map-edit-mode.png[Editor (Map Edit Mode)]
+
+
+Toolbar (Right-Top)
+
+* image:icons/change-branch-color.png[Change Branch Color] Change selected node branch color.
+* image:icons/export-as-pdf.png[Export as PDF] Export active document as PDF into Google Drive.
+
+Toolbar (Left-Bottom)
+
+* image:icons/delete-node.png[Delete Node] Delete selected node.
+
+Toolbar (Right-Bottom)
+
+* image:icons/undo.png[Undo] Undo
+* image:icons/redo.png[Redo] Redo
+
+
+
+===== Entering Node Edit Mode
+
+1. Double tap a node.
+
+
+===== Creating Child Node
+
+Use *a child node create handle* on the node.
 
 image::screenshots/main-activity-how-to-create-sub-node.png[Creating Child Node]
 
 1. Tap the node and changing node status to selected one -> *A child node create handle* appear in left or right side on the node. 
-1. Drag *the child node create handle*
-1. Stop dragging proper position
+1. Drag *the child node create handle*.
+1. Stop dragging proper location.
 1. New child node is generated.
 
 
-====== Cutting Branch between Parent and Child Node
+===== Cutting Branch between Parent and Child Node
 
 image::screenshots/main-activity-how-to-change-node.png[Cut Branch Handle]
 
-To select the parent node and *a cut branch handle* appear in the middle of the branch. +
-Drag *the cut branch handle* to cut the branch.
-
-It is changed the cut child node into central type node.  
+1. Select the parent node and *a cut branch handle* appear on the middle of the branch.
+1. Drag *the cut branch handle* to cut the branch. -> It is changed the cut child node into central type node.  
 
 [NOTE]
 Dragging a child node create handle and drop it into that central node, it's possible to change the node to child type node again.
 
 
-====== Moving Node
+===== Moving Node
 
-Drag a node.
-
-
-====== Resizing Node
-
-Select a node and drag a right-bottom handle of the selection border.
+1. Drag a node.
 
 
-====== Collapsing or Expanding Node
+===== Resizing Node
 
-Select a node and tap a bottom button of the node.
+1. Select a node.
+1. Drag a *right-bottom resize handle* of the node selection border.
 
 
-====== Delete Node
+===== Collapsing or Expanding Node
 
-Select a node and tap a remove button on the edit toolbar.
+1. Select a node.
+1. Tap a *Collapse [-]* / *Expand [+]* button in the bottom of the node.
+
+
+===== Delete Node
+
+1. Select a node
+1. Tap the image:icons/delete-node.png[Delete Node] *Delete Button* on the toolbar (Left-Bottom).
 
 image::screenshots/main-activity-remove-node-icon.png[Delete Node Button]
 
 
-===== Node Edit Mode
-
-image::screenshots/main-activity-node-edit-mode.png[Node Edit Mode]
+==== Node Edit Mode
 
 This mode is for drawing your thought on a node.
 
-In order to back Map Edit Mode, tap the close button on the right top corner of screen.  
+image::screenshots/editor-node-edit-mode.png[Editor (Node Edit Mode)]
+
+
+
+Toolbar ( Right-Top )
+
+* image:icons/choose-pen-color.png[Choose Pen Color] Set stroke color / Change the strokes color of the selected group.
+* image:icons/choose-text-color.png[Choose Text Color] Change the selected text color.
+
+Toolbar ( Left-Bottom )
+
+* image:icons/ungroup.png[Ungroup] Ungroup the selected group.
+* image:icons/insert-image.png[Insert Image] Insert an image from Google Drive.
+* image:icons/input-text.png[Input Text] Input a text.
+
+Toolbar ( Right-Bottom )
+
+* image:icons/undo.png[Undo] Undo
+* image:icons/redo.png[Redo] Redo
+
+
+Right-Top corner
+
+* image:icons/close-node-edit-mode.png[Back To Map Edit Mode] Back to the *Map Edit Mode*
 
 [NOTE]
-Under using native style, it's also possible to use double tap guesture with a finger.
+Under using native style, it’s also possible to use double tap guesture with a finger.
 
 
-====== Tool Switcher
+===== Tool Switcher
 
 image::screenshots/main-activity-node-edit-mode-tool-sw-non-spen.png[Tool Switcher"]
 
@@ -160,99 +232,74 @@ There are four tools, Pen / Eraser / Selection / Zoom. +
 In order to switch a tool, tap the tool.
 
 [NOTE]
-The pen color is black only for now. +
-Mulitple pen colors plugin feature is planned.
+Changing Pen Thickness does not support now.
+Mulitple pen thickness plugin feature is planned.
 
-====== Tool Switcher ( in the case of Native Stylus Device )
 
-image::screenshots/main-activity-node-edit-mode-tool-sw.png[Tool Switcher"]
+===== Tool Switcher ( in the case of Native Stylus Mode )
+
+image::screenshots/main-activity-node-edit-mode-tool-sw.png[Tool Switcher]
 
 There are three tools, Pen / Eraser / Selection. +
 In order to switch a tool, tap the tool.
 
 [NOTE]
-The pen color is black only for now. +
-Mulitple pen colors plugin feature is planned.
+Changing Pen Thickness does not support now.
+Mulitple pen thickness plugin feature is planned.
 
 
-==== Current Active Document File Management
+===== Making Strokes Group
 
-image::screenshots/main-activity-action-bar.png[Action Bar]
+It's possible to make multiple strokes group.
 
-* (*a*). File Management Activity Button
-** Entering the File Management Activity. It's possible to manage multiple files.
-* (*b*). New Document Button
-** Creating a new document.
-** Previous current active document is stored into background buffer. It's possible to access these files in the File Management Activity.
-* (*c*). Open Document Button
-** Open a document from Google Drive.
-* (*d*). Save Document Button
-** Save current active document into Google Drive.
-* (*e*). Sync Document Button
-** Sync current active document with the one that was opend from Google Drive.
+1. Select image:icons/selection-mode.png[Selection Tool] the Seletion Tool on the toolswitcher.
+1. Enclosing strokes by using finger or stylus.
 
 
-=== File Management Activity
+It's possible to manipulate for the group below.
 
-image::screenshots/finder-activity-overview.png[File Managment Activity]
-
-This is for managing some local buffer documents. +
-There are two folders, *Primary* and *Archive* Folder.
-
-
-==== Primary Folder
-
-image::screenshots/finder-activity-primary-folder.png[Primary Folder]
-
-* (*a*). Back Button
-** Back to the Main Activity.
-* (*b*). PDF Export Button
-** Export a selected document as PDF. Generated PDF is stored into Google Drive.
-* (*c*). Archive Button
-** Move a selected document into Archive Folder.
-* (*d*). Plugins Button
-** Entering the Plugins Activity.
-* (*e*). Document Preview Button
-** Loading a document as current active document and back to the Main Activity.
-* (*f*). Show Archive Folder Button
-** Show the archive folder.
+* Change the color of strokes
+* Resize the group
+* Ungroup
+* Delete the group
 
 
-==== Archive Folder
+=== (3)Settings
 
-image::screenshots/finder-activity-archive-folder.png[File Manager Activity Archive Folder]
+This is for settings.
 
-* (*a*). Primary Button
-** Move back a selected document into Primary Folder.
-* (*b*). Clear Button
-** Clear all documents in the archive folder.
-* (*c*). Show Primary Folder Button
-** Show the primary folder.
+image::screenshots/settings.png[Settings]
+
+* *Use Native Stylus* : Use native stylus or not +
+Please check this option when your android tablet has support for Native Stylus like S-Pen, Z-Stylus.
 
 
-=== Plugins Activity
+=== (4)Plugins
 
-image::screenshots/plugins-activity.png[Plugins Activity]
+This is for Plugins.
 
-Plugin list. +
-Now there is only one plugin *PDF Export*.
+image::screenshots/plugins.png[Plugins]
+
+[NOTE]
+There is only one plugin *PDF Export* now.
+
+
+==== How to buy
 
 Tap *BUY* Button, entering purchase the plugin process.
 
-image::screenshots/plugins-activity-pdf-export.png[Purchasing PDF Export Plugin]
+image::screenshots/purchasing-pdf-export-plugin.png[Purchasing PDF Export Plugin]
 
 [NOTE]
-When you got the PDF Export Plugin, it's changed *PDF Export Button* enabled in the File Management Activity.
+When you got the PDF Export Plugin, it's changed *PDF Export Button* enabled in the Editor Screen.
 
 
 == Under Developing Features
 
 These below features that are planned for future updates.
 
-* Import Image
-* Input Text
 * Map Link
 * Previous MindBoard Data Import Plugin
 * Color Theme Plugin
-* Pen Color and Pen thickness Control Plugin
+* Pen thickness Control Plugin
 

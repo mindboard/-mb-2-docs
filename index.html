@@ -536,9 +536,10 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#_using_mindboard_2">2. Using MindBoard 2</a>
 <ul class="sectlevel2">
 <li><a href="#_overview_2">2.1. Overview</a></li>
-<li><a href="#_main_activity">2.2. Main Activity</a></li>
-<li><a href="#_file_management_activity">2.3. File Management Activity</a></li>
-<li><a href="#_plugins_activity">2.4. Plugins Activity</a></li>
+<li><a href="#__1_file_manager">2.2. (1)File Manager</a></li>
+<li><a href="#__2_editor">2.3. (2)Editor</a></li>
+<li><a href="#__3_settings">2.4. (3)Settings</a></li>
+<li><a href="#__4_plugins">2.5. (4)Plugins</a></li>
 </ul>
 </li>
 <li><a href="#_under_developing_features">3. Under Developing Features</a></li>
@@ -551,7 +552,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>This document explains MindBoard 2 Version 0.6.1.</p>
+<p>This document explains MindBoard 2 Version 0.7.1.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -573,7 +574,7 @@ table.CodeRay td.code>pre{padding:0}
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="images/screenshots/mind-mapping-example.png" alt="MindBoard 2">
+<img src="images/screenshots/an-example-map.png" alt="MindBoard 2">
 </div>
 </div>
 <div class="sect2">
@@ -583,7 +584,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div class="paragraph">
 <p>It&#8217;s supported Finger or Stylus input.<br>
-If your using Android device is supported native Stylus, this app starts as Stylus input mode, or this app starts as Finger input mode.</p>
+You can change these mode by using the <em>Use Native Stylus</em> option in Settings.</p>
 </div>
 </div>
 <div class="sect2">
@@ -601,28 +602,21 @@ This app is being expected that the best and standard mind mapping with handwrit
 <p>Directly outputing your thought by using Finger or Stylus</p>
 </li>
 <li>
-<p>Multiple mindmap in one document</p>
+<p>Multiple mindmaps ( central nodes ) in one document</p>
 </li>
 <li>
 <p>PDF Export (Plugin)</p>
 </li>
 <li>
-<p>Syncing documents with Google Drive</p>
+<p>Input: Stylus, Image and Text</p>
+</li>
+<li>
+<p>Open, Save and Sync documents with Google Drive</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>These below features that are planned for future updates.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Image Import</p>
-</li>
-<li>
-<p>Text Input</p>
-</li>
-</ul>
+<p>and so on.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -631,7 +625,7 @@ This app is being expected that the best and standard mind mapping with handwrit
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-In details, see last section <strong>Under developing features</strong> in ths document.
+In details, see last section <strong>Under developing features</strong> in this document.
 </td>
 </tr>
 </table>
@@ -647,7 +641,10 @@ In details, see last section <strong>Under developing features</strong> in ths d
 </ul>
 </div>
 <div class="paragraph">
-<p>This app is designed for Galaxy Note series and Galaxy Tab A with S-Pen.</p>
+<p>This app is designed for Android Tables.</p>
+</div>
+<div class="paragraph">
+<p>Galaxy Note series and Galaxy Tab A with S-Pen.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -656,7 +653,7 @@ In details, see last section <strong>Under developing features</strong> in ths d
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-In order to achieve the best performance, it&#8217;s recommended to use native stylus Android tablets like Galaxy Note or Galaxy Tab A with S-Pen.
+For the best mindmapping experience, it&#8217;s recommended to use Native Stylus ( S-Pen or Z-Stylus ) Android tablets.
 </td>
 </tr>
 </table>
@@ -687,56 +684,176 @@ And also your feedback will be much appreciated.</p>
 <div class="sect2">
 <h3 id="_overview_2"><a class="anchor" href="#_overview_2"></a>2.1. Overview</h3>
 <div class="paragraph">
-<p>There are three activities.</p>
+<p>There are four screens.</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>(1)File Manager</p>
+</li>
+<li>
+<p>(2)Editor</p>
+</li>
+<li>
+<p>(3)Settings</p>
+</li>
+<li>
+<p>(4)Plugins</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Use the bottom navigation to switch the screen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/screenshots/bottom-navigation-overview.png" alt="Bottom Navigation">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__1_file_manager"><a class="anchor" href="#__1_file_manager"></a>2.2. (1)File Manager</h3>
+<div class="paragraph">
+<p>This is for documents management.
+There are <strong>Primary</strong> / <strong>Archive</strong> Folder.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/screenshots/file-manager-overview.png" alt="File Manager">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tap the icon to switch <span class="image"><img src="images/icons/primary-folder.png" alt="Primary Folder"></span> <strong>Primary</strong> / <span class="image"><img src="images/icons/archive-folder.png" alt="Archive Folder"></span> <strong>Archive</strong></p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_primary_folder"><a class="anchor" href="#_primary_folder"></a>2.2.1. Primary Folder</h4>
+<div class="paragraph">
+<p>This folder manage primary documents.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/screenshots/file-manager-primary.png" alt="File Manager (Primary Folder)">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="images/icons/new-page.png" alt="New Document"></span> Add new document</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/download-page.png" alt="Download Document"></span> Open document from Google Drive</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/upload-page.png" alt="Upload Document"></span> Save As document into Google Drive</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/sync-page.png" alt="Sync Document"></span> Sync document with Google Drive</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/move-to-archive.png" alt="Move Document to Archive"></span> Move document into Archive Folder</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_archive_folder"><a class="anchor" href="#_archive_folder"></a>2.2.2. Archive Folder</h4>
+<div class="paragraph">
+<p>This folder manage archive documents.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/screenshots/file-manager-archive.png" alt="File Manager (Archive Folder)">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="images/icons/revert-from-archive.png" alt="Revert Document from Archive"></span> Revert selected document to Primary Folder.</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/empty-trash.png" alt="Empty Archive"></span> Clear all documents in this folder.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__2_editor"><a class="anchor" href="#__2_editor"></a>2.3. (2)Editor</h3>
+<div class="paragraph">
+<p>This is for mind mapping.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/screenshots/editor-overview.png" alt="Editor">
+</div>
+</div>
+<div class="paragraph">
+<p>There are two mode, <strong>Map Edit Mode</strong> and <strong>Node Edit Mode</strong>.</p>
+</div>
+<div class="sect3">
+<h4 id="_map_edit_mode"><a class="anchor" href="#_map_edit_mode"></a>2.3.1. Map Edit Mode</h4>
+<div class="paragraph">
+<p>This mode is for freely creating and organizing nodes in order to do mind mapping.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/screenshots/editor-map-edit-mode.png" alt="Editor (Map Edit Mode)">
+</div>
+</div>
+<div class="paragraph">
+<p>Toolbar (Right-Top)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="images/icons/change-branch-color.png" alt="Change Branch Color"></span> Change selected node branch color.</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/export-as-pdf.png" alt="Export as PDF"></span> Export active document as PDF into Google Drive.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Toolbar (Left-Bottom)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="images/icons/delete-node.png" alt="Delete Node"></span> Delete selected node.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Toolbar (Right-Bottom)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="images/icons/undo.png" alt="Undo"></span> Undo</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/redo.png" alt="Redo"></span> Redo</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_entering_node_edit_mode"><a class="anchor" href="#_entering_node_edit_mode"></a>Entering Node Edit Mode</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Editing mindmap : <strong>(1) Main Activity</strong></p>
-</li>
-<li>
-<p>File buffers : <strong>(2) File Manager Activity</strong></p>
-</li>
-<li>
-<p>Plugins <strong>(3) Plugins Activity</strong></p>
+<p>Double tap a node.</p>
 </li>
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_main_activity"><a class="anchor" href="#_main_activity"></a>2.2. Main Activity</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/screenshots/main-activity.png" alt="Main Activity">
-</div>
-</div>
-<div class="paragraph">
-<p>This is for mind mapping.<br>
-There are two mode, <strong>Map Edit Mode</strong> and <strong>Node Edit Mode</strong>.<br>
-Using buttons on the actionbar, it&#8217;s possible to open, save, and sync current active document with Google Drive.</p>
-</div>
-<div class="sect3">
-<h4 id="_editing_active_document"><a class="anchor" href="#_editing_active_document"></a>2.2.1. Editing Active Document</h4>
 <div class="sect4">
-<h5 id="_map_edit_mode"><a class="anchor" href="#_map_edit_mode"></a>Map Edit Mode</h5>
-<div class="imageblock">
-<div class="content">
-<img src="images/screenshots/main-activity-map-edit-mode.png" alt="Map Edit Mdoe">
-</div>
-</div>
+<h5 id="_creating_child_node"><a class="anchor" href="#_creating_child_node"></a>Creating Child Node</h5>
 <div class="paragraph">
-<p>This mode is for freely creating nodes to do mind mapping.</p>
-</div>
-<div class="sect5">
-<h6 id="_entering_node_edit_mode"><a class="anchor" href="#_entering_node_edit_mode"></a>Entering Node Edit Mode</h6>
-<div class="paragraph">
-<p>Double tap a node.</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_creating_child_node"><a class="anchor" href="#_creating_child_node"></a>Creating Child Node</h6>
-<div class="paragraph">
-<p>Using <strong>a child node create handle</strong> on the node.</p>
+<p>Use <strong>a child node create handle</strong> on the node.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -749,10 +866,10 @@ Using buttons on the actionbar, it&#8217;s possible to open, save, and sync curr
 <p>Tap the node and changing node status to selected one &#8594; <strong>A child node create handle</strong> appear in left or right side on the node.</p>
 </li>
 <li>
-<p>Drag <strong>the child node create handle</strong></p>
+<p>Drag <strong>the child node create handle</strong>.</p>
 </li>
 <li>
-<p>Stop dragging proper position</p>
+<p>Stop dragging proper location.</p>
 </li>
 <li>
 <p>New child node is generated.</p>
@@ -760,19 +877,22 @@ Using buttons on the actionbar, it&#8217;s possible to open, save, and sync curr
 </ol>
 </div>
 </div>
-<div class="sect5">
-<h6 id="_cutting_branch_between_parent_and_child_node"><a class="anchor" href="#_cutting_branch_between_parent_and_child_node"></a>Cutting Branch between Parent and Child Node</h6>
+<div class="sect4">
+<h5 id="_cutting_branch_between_parent_and_child_node"><a class="anchor" href="#_cutting_branch_between_parent_and_child_node"></a>Cutting Branch between Parent and Child Node</h5>
 <div class="imageblock">
 <div class="content">
 <img src="images/screenshots/main-activity-how-to-change-node.png" alt="Cut Branch Handle">
 </div>
 </div>
-<div class="paragraph">
-<p>To select the parent node and <strong>a cut branch handle</strong> appear in the middle of the branch.<br>
-Drag <strong>the cut branch handle</strong> to cut the branch.</p>
-</div>
-<div class="paragraph">
-<p>It is changed the cut child node into central type node.</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the parent node and <strong>a cut branch handle</strong> appear on the middle of the branch.</p>
+</li>
+<li>
+<p>Drag <strong>the cut branch handle</strong> to cut the branch. &#8594; It is changed the cut child node into central type node.</p>
+</li>
+</ol>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -787,28 +907,53 @@ Dragging a child node create handle and drop it into that central node, it&#8217
 </table>
 </div>
 </div>
-<div class="sect5">
-<h6 id="_moving_node"><a class="anchor" href="#_moving_node"></a>Moving Node</h6>
-<div class="paragraph">
+<div class="sect4">
+<h5 id="_moving_node"><a class="anchor" href="#_moving_node"></a>Moving Node</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
 <p>Drag a node.</p>
+</li>
+</ol>
 </div>
 </div>
-<div class="sect5">
-<h6 id="_resizing_node"><a class="anchor" href="#_resizing_node"></a>Resizing Node</h6>
-<div class="paragraph">
-<p>Select a node and drag a right-bottom handle of the selection border.</p>
+<div class="sect4">
+<h5 id="_resizing_node"><a class="anchor" href="#_resizing_node"></a>Resizing Node</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select a node.</p>
+</li>
+<li>
+<p>Drag a <strong>right-bottom resize handle</strong> of the node selection border.</p>
+</li>
+</ol>
 </div>
 </div>
-<div class="sect5">
-<h6 id="_collapsing_or_expanding_node"><a class="anchor" href="#_collapsing_or_expanding_node"></a>Collapsing or Expanding Node</h6>
-<div class="paragraph">
-<p>Select a node and tap a bottom button of the node.</p>
+<div class="sect4">
+<h5 id="_collapsing_or_expanding_node"><a class="anchor" href="#_collapsing_or_expanding_node"></a>Collapsing or Expanding Node</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select a node.</p>
+</li>
+<li>
+<p>Tap a <strong>Collapse [-]</strong> / <strong>Expand [+]</strong> button in the bottom of the node.</p>
+</li>
+</ol>
 </div>
 </div>
-<div class="sect5">
-<h6 id="_delete_node"><a class="anchor" href="#_delete_node"></a>Delete Node</h6>
-<div class="paragraph">
-<p>Select a node and tap a remove button on the edit toolbar.</p>
+<div class="sect4">
+<h5 id="_delete_node"><a class="anchor" href="#_delete_node"></a>Delete Node</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select a node</p>
+</li>
+<li>
+<p>Tap the <span class="image"><img src="images/icons/delete-node.png" alt="Delete Node"></span> <strong>Delete Button</strong> on the toolbar (Left-Bottom).</p>
+</li>
+</ol>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -817,18 +962,67 @@ Dragging a child node create handle and drop it into that central node, it&#8217
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_node_edit_mode"><a class="anchor" href="#_node_edit_mode"></a>Node Edit Mode</h5>
-<div class="imageblock">
-<div class="content">
-<img src="images/screenshots/main-activity-node-edit-mode.png" alt="Node Edit Mode">
-</div>
-</div>
+<div class="sect3">
+<h4 id="_node_edit_mode"><a class="anchor" href="#_node_edit_mode"></a>2.3.2. Node Edit Mode</h4>
 <div class="paragraph">
 <p>This mode is for drawing your thought on a node.</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="images/screenshots/editor-node-edit-mode.png" alt="Editor (Node Edit Mode)">
+</div>
+</div>
 <div class="paragraph">
-<p>In order to back Map Edit Mode, tap the close button on the right top corner of screen.</p>
+<p>Toolbar ( Right-Top )</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="images/icons/choose-pen-color.png" alt="Choose Pen Color"></span> Set stroke color / Change the strokes color of the selected group.</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/choose-text-color.png" alt="Choose Text Color"></span> Change the selected text color.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Toolbar ( Left-Bottom )</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="images/icons/ungroup.png" alt="Ungroup"></span> Ungroup the selected group.</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/insert-image.png" alt="Insert Image"></span> Insert an image from Google Drive.</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/input-text.png" alt="Input Text"></span> Input a text.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Toolbar ( Right-Bottom )</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="images/icons/undo.png" alt="Undo"></span> Undo</p>
+</li>
+<li>
+<p><span class="image"><img src="images/icons/redo.png" alt="Redo"></span> Redo</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Right-Top corner</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="images/icons/close-node-edit-mode.png" alt="Back To Map Edit Mode"></span> Back to the <strong>Map Edit Mode</strong></p>
+</li>
+</ul>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -837,13 +1031,13 @@ Dragging a child node create handle and drop it into that central node, it&#8217
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Under using native style, it&#8217;s also possible to use double tap guesture with a finger.
+Under using native style, it’s also possible to use double tap guesture with a finger.
 </td>
 </tr>
 </table>
 </div>
-<div class="sect5">
-<h6 id="_tool_switcher"><a class="anchor" href="#_tool_switcher"></a>Tool Switcher</h6>
+<div class="sect4">
+<h5 id="_tool_switcher"><a class="anchor" href="#_tool_switcher"></a>Tool Switcher</h5>
 <div class="imageblock">
 <div class="content">
 <img src="images/screenshots/main-activity-node-edit-mode-tool-sw-non-spen.png" alt="Tool Switcher"">
@@ -860,18 +1054,18 @@ In order to switch a tool, tap the tool.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The pen color is black only for now.<br>
-Mulitple pen colors plugin feature is planned.
+Changing Pen Thickness does not support now.
+Mulitple pen thickness plugin feature is planned.
 </td>
 </tr>
 </table>
 </div>
 </div>
-<div class="sect5">
-<h6 id="_tool_switcher_in_the_case_of_native_stylus_device"><a class="anchor" href="#_tool_switcher_in_the_case_of_native_stylus_device"></a>Tool Switcher ( in the case of Native Stylus Device )</h6>
+<div class="sect4">
+<h5 id="_tool_switcher_in_the_case_of_native_stylus_mode"><a class="anchor" href="#_tool_switcher_in_the_case_of_native_stylus_mode"></a>Tool Switcher ( in the case of Native Stylus Mode )</h5>
 <div class="imageblock">
 <div class="content">
-<img src="images/screenshots/main-activity-node-edit-mode-tool-sw.png" alt="Tool Switcher"">
+<img src="images/screenshots/main-activity-node-edit-mode-tool-sw.png" alt="Tool Switcher">
 </div>
 </div>
 <div class="paragraph">
@@ -885,224 +1079,77 @@ In order to switch a tool, tap the tool.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The pen color is black only for now.<br>
-Mulitple pen colors plugin feature is planned.
+Changing Pen Thickness does not support now.
+Mulitple pen thickness plugin feature is planned.
 </td>
 </tr>
 </table>
 </div>
 </div>
+<div class="sect4">
+<h5 id="_making_strokes_group"><a class="anchor" href="#_making_strokes_group"></a>Making Strokes Group</h5>
+<div class="paragraph">
+<p>It&#8217;s possible to make multiple strokes group.</p>
 </div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select <span class="image"><img src="images/icons/selection-mode.png" alt="Selection Tool"></span> the Seletion Tool on the toolswitcher.</p>
+</li>
+<li>
+<p>Enclosing strokes by using finger or stylus.</p>
+</li>
+</ol>
 </div>
-<div class="sect3">
-<h4 id="_current_active_document_file_management"><a class="anchor" href="#_current_active_document_file_management"></a>2.2.2. Current Active Document File Management</h4>
-<div class="imageblock">
-<div class="content">
-<img src="images/screenshots/main-activity-action-bar.png" alt="Action Bar">
-</div>
+<div class="paragraph">
+<p>It&#8217;s possible to manipulate for the group below.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>(<strong>a</strong>). File Management Activity Button</p>
-<div class="ulist">
-<ul>
+<p>Change the color of strokes</p>
+</li>
 <li>
-<p>Entering the File Management Activity. It&#8217;s possible to manage multiple files.</p>
+<p>Resize the group</p>
+</li>
+<li>
+<p>Ungroup</p>
+</li>
+<li>
+<p>Delete the group</p>
 </li>
 </ul>
 </div>
-</li>
-<li>
-<p>(<strong>b</strong>). New Document Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Creating a new document.</p>
-</li>
-<li>
-<p>Previous current active document is stored into background buffer. It&#8217;s possible to access these files in the File Management Activity.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>(<strong>c</strong>). Open Document Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Open a document from Google Drive.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>(<strong>d</strong>). Save Document Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Save current active document into Google Drive.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>(<strong>e</strong>). Sync Document Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Sync current active document with the one that was opend from Google Drive.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_file_management_activity"><a class="anchor" href="#_file_management_activity"></a>2.3. File Management Activity</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/screenshots/finder-activity-overview.png" alt="File Managment Activity">
-</div>
-</div>
+<h3 id="__3_settings"><a class="anchor" href="#__3_settings"></a>2.4. (3)Settings</h3>
 <div class="paragraph">
-<p>This is for managing some local buffer documents.<br>
-There are two folders, <strong>Primary</strong> and <strong>Archive</strong> Folder.</p>
+<p>This is for settings.</p>
 </div>
-<div class="sect3">
-<h4 id="_primary_folder"><a class="anchor" href="#_primary_folder"></a>2.3.1. Primary Folder</h4>
 <div class="imageblock">
 <div class="content">
-<img src="images/screenshots/finder-activity-primary-folder.png" alt="Primary Folder">
+<img src="images/screenshots/settings.png" alt="Settings">
 </div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>(<strong>a</strong>). Back Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Back to the Main Activity.</p>
+<p><strong>Use Native Stylus</strong> : Use native stylus or not<br>
+Please check this option when your android tablet has support for Native Stylus like S-Pen, Z-Stylus.</p>
 </li>
 </ul>
-</div>
-</li>
-<li>
-<p>(<strong>b</strong>). PDF Export Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Export a selected document as PDF. Generated PDF is stored into Google Drive.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>(<strong>c</strong>). Archive Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Move a selected document into Archive Folder.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>(<strong>d</strong>). Plugins Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Entering the Plugins Activity.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>(<strong>e</strong>). Document Preview Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Loading a document as current active document and back to the Main Activity.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>(<strong>f</strong>). Show Archive Folder Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Show the archive folder.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_archive_folder"><a class="anchor" href="#_archive_folder"></a>2.3.2. Archive Folder</h4>
-<div class="imageblock">
-<div class="content">
-<img src="images/screenshots/finder-activity-archive-folder.png" alt="File Manager Activity Archive Folder">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>(<strong>a</strong>). Primary Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Move back a selected document into Primary Folder.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>(<strong>b</strong>). Clear Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Clear all documents in the archive folder.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>(<strong>c</strong>). Show Primary Folder Button</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Show the primary folder.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_plugins_activity"><a class="anchor" href="#_plugins_activity"></a>2.4. Plugins Activity</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/screenshots/plugins-activity.png" alt="Plugins Activity">
-</div>
-</div>
+<h3 id="__4_plugins"><a class="anchor" href="#__4_plugins"></a>2.5. (4)Plugins</h3>
 <div class="paragraph">
-<p>Plugin list.<br>
-Now there is only one plugin <strong>PDF Export</strong>.</p>
-</div>
-<div class="paragraph">
-<p>Tap <strong>BUY</strong> Button, entering purchase the plugin process.</p>
+<p>This is for Plugins.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/screenshots/plugins-activity-pdf-export.png" alt="Purchasing PDF Export Plugin">
+<img src="images/screenshots/plugins.png" alt="Plugins">
 </div>
 </div>
 <div class="admonitionblock note">
@@ -1112,10 +1159,33 @@ Now there is only one plugin <strong>PDF Export</strong>.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-When you got the PDF Export Plugin, it&#8217;s changed <strong>PDF Export Button</strong> enabled in the File Management Activity.
+There is only one plugin <strong>PDF Export</strong> now.
 </td>
 </tr>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_how_to_buy"><a class="anchor" href="#_how_to_buy"></a>2.5.1. How to buy</h4>
+<div class="paragraph">
+<p>Tap <strong>BUY</strong> Button, entering purchase the plugin process.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/screenshots/purchasing-pdf-export-plugin.png" alt="Purchasing PDF Export Plugin">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+When you got the PDF Export Plugin, it&#8217;s changed <strong>PDF Export Button</strong> enabled in the Editor Screen.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -1129,12 +1199,6 @@ When you got the PDF Export Plugin, it&#8217;s changed <strong>PDF Export Button
 <div class="ulist">
 <ul>
 <li>
-<p>Import Image</p>
-</li>
-<li>
-<p>Input Text</p>
-</li>
-<li>
 <p>Map Link</p>
 </li>
 <li>
@@ -1144,7 +1208,7 @@ When you got the PDF Export Plugin, it&#8217;s changed <strong>PDF Export Button
 <p>Color Theme Plugin</p>
 </li>
 <li>
-<p>Pen Color and Pen thickness Control Plugin</p>
+<p>Pen thickness Control Plugin</p>
 </li>
 </ul>
 </div>
@@ -1153,7 +1217,7 @@ When you got the PDF Export Plugin, it&#8217;s changed <strong>PDF Export Button
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-05-25 19:15:09 JST
+Last updated 2017-07-13 20:19:18 JST
 </div>
 </div>
 </body>
