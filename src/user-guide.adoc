@@ -25,11 +25,6 @@ This app is being expected that the best and standard mind mapping with handwrit
 * Input: Stylus, Image and Text
 * Open, Save and Sync documents with Google Drive
 
-and so on.
-
-[NOTE]
-In details, see last section *Under developing features* in this document.
-
 
 === Requirement
 
