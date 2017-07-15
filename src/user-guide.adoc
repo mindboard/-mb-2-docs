@@ -37,8 +37,6 @@ In details, see last section *Under developing features* in this document.
 
 This app is designed for Android Tables.
 
-Galaxy Note series and Galaxy Tab A with S-Pen.
-
 [NOTE]
 For the best mindmapping experience, it's recommended to use Native Stylus ( S-Pen or Z-Stylus ) Android tablets.
 
