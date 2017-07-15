@@ -152,8 +152,8 @@ image::screenshots/main-activity-how-to-create-sub-node.png[Creating Child Node]
 
 image::screenshots/main-activity-how-to-change-node.png[Cut Branch Handle]
 
-1. Select the parent node and *a cut branch handle* appear on the middle of the branch.
-1. Drag *the cut branch handle* to cut the branch. -> It is changed the cut child node into central type node.  
+1. Select the parent node -> *a cut branch handle* appear on the middle of the branch.
+1. Drag *the cut branch handle* to cut the branch. -> It is changed the cut __child-type__ node into __central-type__ node.
 
 [NOTE]
 Dragging a child node create handle and drop it into that central node, it's possible to change the node to child type node again.
