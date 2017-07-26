@@ -69,7 +69,7 @@ image::screenshots/bottom-navigation-overview.png[Bottom Navigation]
 === (1)File Manager
 
 This is for documents management.
-There are *Primary* / *Archive* Folder.
+There are *Primary* / *Archive* Folders.
 
 image::screenshots/file-manager-overview.png[File Manager]
 
@@ -84,9 +84,9 @@ image::screenshots/file-manager-primary.png[File Manager (Primary Folder)]
 
 * image:icons/new-page.png[New Document] Add new document
 * image:icons/download-page.png[Download Document] Open document from Google Drive
-* image:icons/upload-page.png[Upload Document] Save As document into Google Drive
-* image:icons/sync-page.png[Sync Document] Sync document with Google Drive
-* image:icons/move-to-archive.png[Move Document to Archive] Move document into Archive Folder
+* image:icons/upload-page.png[Upload Document] Save As selected document into Google Drive
+* image:icons/sync-page.png[Sync Document] Sync selected document with Google Drive
+* image:icons/move-to-archive.png[Move Document to Archive] Move selected document into Archive Folder
 
 
 ==== Archive Folder
@@ -96,7 +96,7 @@ This folder manage archive documents.
 image::screenshots/file-manager-archive.png[File Manager (Archive Folder)]
 
 * image:icons/revert-from-archive.png[Revert Document from Archive] Revert selected document to Primary Folder.
-* image:icons/empty-trash.png[Empty Archive] Clear all documents in this folder.
+* image:icons/empty-trash.png[Empty Archive] Delete all documents in this folder.
 
 
 === (2)Editor
@@ -117,12 +117,12 @@ image::screenshots/editor-map-edit-mode.png[Editor (Map Edit Mode)]
 
 Toolbar (Right-Top)
 
-* image:icons/change-branch-color.png[Change Branch Color] Change selected node branch color.
-* image:icons/export-as-pdf.png[Export as PDF] Export active document as PDF into Google Drive. ( PDF Export Plugin is needed. )
+* image:icons/change-branch-color.png[Change Branch Color] Change selected node branch color
+* image:icons/export-as-pdf.png[Export as PDF] Export current document as PDF into Google Drive ( PDF Export Plugin is needed. )
 
 Toolbar (Left-Bottom)
 
-* image:icons/delete-node.png[Delete Node] Delete selected node.
+* image:icons/delete-node.png[Delete Node] Delete selected node
 
 Toolbar (Right-Bottom)
 
