@@ -9,7 +9,7 @@ image::screenshots/an-example-map.png[MindBoard 2]
 MindBoard 2 is a simple mind mapping application with handwriting for Android tablets.
 
 It's supported Finger or Stylus input. + 
-You can change these mode by using the *Use Native Stylus* option in Settings.
+You can choose which mode you use by using the *Use Native Stylus* option in Settings.
 
 === Concept
 
