@@ -8,18 +8,18 @@ image::screenshots/an-example-map.png[MindBoard 2]
 
 MindBoard 2 is a simple mind mapping application with handwriting for Android tablets.
 
-It's supported Finger or Stylus input. + 
-You can choose which mode you use by using the *Use Native Stylus* option in Settings.
+It supports Finger or Stylus input. + 
+You can choose which mode to use by using the *Use Native Stylus* option in Settings.
 
 === Concept
 
 Simple and Standard +
-This app is being expected that the best and standard mind mapping with handwriting application for Android tablets.
+This app aims to be the best and standard mind mapping with handwriting application for Android tablets.
 
 
 === Key Features
 
-* Directly outputing your thought by using Finger or Stylus
+* Directly channel your thoughts using Finger or Stylus
 * Multiple mindmaps ( central nodes ) in one document
 * PDF Export (Plugin)
 * Input: Stylus, Image and Text
@@ -38,12 +38,12 @@ For the best mindmapping experience, it's recommended to use Native Stylus ( S-P
 
 === Installation
 
-Get the https://play.google.com/store/apps/details?id=com.mindboardapps.app.mb2.client[MindBoard 2] on Google Play.
+Get the https://play.google.com/store/apps/details?id=com.mindboardapps.app.mb2.client[MindBoard 2] app on Google Play.
 
 
 === Getting help
 
-If you have any questions, please http://www.mindboardapps.com/contact.html[contact].
+If you have any questions, please http://www.mindboardapps.com/contact.html[make contact].
 And also your feedback will be much appreciated.
 
 To get update information, see 
@@ -61,24 +61,24 @@ There are four screens.
 - (3)Settings
 - (4)Plugins
 
-Use the bottom navigation to switch the screen. 
+Use the bottom navigation to switch between screens. 
 
 image::screenshots/bottom-navigation-overview.png[Bottom Navigation]
 
 
 === (1)File Manager
 
-This is for documents management.
-There are *Primary* / *Archive* Folders.
+This is for document management.
+There are *Primary* and *Archive* Folders.
 
 image::screenshots/file-manager-overview.png[File Manager]
 
-* Tap the icon to switch image:icons/primary-folder.png[Primary Folder] *Primary* / image:icons/archive-folder.png[Archive Folder] *Archive*
+* Tap the icon to switch between image:icons/primary-folder.png[Primary Folder] *Primary* and image:icons/archive-folder.png[Archive Folder] *Archive*
 
 
 ==== Primary Folder
 
-This folder manage primary documents.
+This folder manages primary documents.
 
 image::screenshots/file-manager-primary.png[File Manager (Primary Folder)]
 
@@ -105,7 +105,7 @@ This is for mind mapping.
 
 image::screenshots/editor-overview.png[Editor]
 
-There are two mode, *Map Edit Mode* and *Node Edit Mode*.
+There are two modes, *Map Edit Mode* and *Node Edit Mode*.
 
 
 ==== Map Edit Mode
@@ -138,25 +138,26 @@ Toolbar (Right-Bottom)
 
 ===== Creating Child Node
 
-Use *a child node create handle* on the node.
+Use the *child node create handle* on the node.
 
 image::screenshots/main-activity-how-to-create-sub-node.png[Creating Child Node]
 
-1. Tap the node and changing node status to selected one -> *A child node create handle* appear in left or right side on the node. 
-1. Drag *the child node create handle*.
-1. Stop dragging proper location.
-1. New child node is generated.
+1. Tap the node to change the node status to selected -> The *child node create handle* appears on the left or right side of the node. 
+1. Drag the *child node create handle*.
+1. Stop dragging in the desired location for the new node.
+1. The new child node is created.
 
 
-===== Cutting Branch between Parent and Child Node
+===== Cutting the branch between Parent and Child Node
 
 image::screenshots/main-activity-how-to-change-node.png[Cut Branch Handle]
 
-1. Select the parent node -> *a cut branch handle* appear on the middle of the branch.
-1. Drag *the cut branch handle* to cut the branch. -> It is changed the cut __child-type__ node into __central-type__ node.
+1. Select the parent node -> the *cut branch handle* appears in the middle of the branch.
+1. Drag the *cut branch handle* to cut the branch -> the orphaned __child-type__ node changes into a __central-type__ node.
 
 [NOTE]
-Dragging a child node create handle and drop it into that central node, it's possible to change the node to child type node again.
+It's possible to re-parent the orphaned node to make it a child-type node again.
+To do this, drag a *child node create handle* from the desired parend onto the node.
 
 
 ===== Moving Node
@@ -186,7 +187,7 @@ image::screenshots/main-activity-remove-node-icon.png[Delete Node Button]
 
 ==== Node Edit Mode
 
-This mode is for drawing your thought on a node.
+This mode is for drawing your thoughts on a node.
 
 image::screenshots/editor-node-edit-mode.png[Editor (Node Edit Mode)]
 
@@ -194,7 +195,7 @@ image::screenshots/editor-node-edit-mode.png[Editor (Node Edit Mode)]
 
 Toolbar ( Right-Top )
 
-* image:icons/choose-pen-color.png[Choose Pen Color] Set stroke color / Change the strokes color of the selected group.
+* image:icons/choose-pen-color.png[Choose Pen Color] Set stroke color / Changes the stroke color of the selected group.
 * image:icons/choose-text-color.png[Choose Text Color] Change the selected text color.
 
 Toolbar ( Left-Bottom )
@@ -214,7 +215,7 @@ Right-Top corner
 * image:icons/close-node-edit-mode.png[Back To Map Edit Mode] Back to the *Map Edit Mode*
 
 [NOTE]
-Under checked *Use Native Style* in the Settings, it’s also possible to back to the *Map Edit Mode* by double tap guesture with a finger.
+If you have checked *Use Native Style* in the Settings, it’s also possible to return to the *Map Edit Mode* by double-tapping with a finger.
 
 
 ===== Tool Switcher
@@ -222,34 +223,34 @@ Under checked *Use Native Style* in the Settings, it’s also possible to back t
 image::screenshots/main-activity-node-edit-mode-tool-sw-non-spen.png[Tool Switcher"]
 
 There are four tools, Pen / Eraser / Selection / Zoom. +
-In order to switch a tool, tap the tool.
+In order to switch to a tool, tap it.
 
 [NOTE]
-Changing Pen Thickness does not support now.
-Mulitple pen thickness plugin feature is planned.
+Changing Pen Thickness is not currently supported.
+A Multiple Pen Thickness feature is planned as plugin.
 
 
-===== Tool Switcher ( in the case of checked the *Use Native Stylus* option  )
+===== Tool Switcher ( if you have checked the *Use Native Stylus* option  )
 
 image::screenshots/main-activity-node-edit-mode-tool-sw.png[Tool Switcher]
 
 There are three tools, Pen / Eraser / Selection. +
-In order to switch a tool, tap the tool.
+In order to switch to a tool, tap it.
 
 [NOTE]
-Changing Pen Thickness does not support now.
-Mulitple pen thickness plugin feature is planned.
+Changing Pen Thickness is not currently supported.
+A Multiple Pen Thickness feature is planned as plugin.
 
 
 ===== Making Strokes Group
 
-It's possible to make multiple strokes group.
+It's possible to group multiple strokes.
 
-1. Select image:icons/selection-mode.png[Selection Tool] the Seletion Tool on the toolswitcher.
-1. Enclosing strokes by using finger or stylus.
+1. Pick the image:icons/selection-mode.png[Selection Tool] the Selection Tool on the toolswitcher.
+1. Lasso the desired set of strokes by circling them using finger or stylus.
 
 
-It's possible to manipulate for the group below.
+Now it's possible to manipulate the group as follows:
 
 * Change the color of strokes
 * Resize the group
@@ -259,12 +260,12 @@ It's possible to manipulate for the group below.
 
 === (3)Settings
 
-This is for settings.
+This is for Settings.
 
 image::screenshots/settings.png[Settings]
 
 * *Use Native Stylus* : Use native stylus or not +
-Please check this option when your android tablet has support for Native Stylus like S-Pen, Z-Stylus.
+Please check this option if your Android tablet has support for a Native Stylus such as the S-Pen or Z-Stylus.
 
 
 === (4)Plugins
@@ -274,25 +275,25 @@ This is for Plugins.
 image::screenshots/plugins.png[Plugins]
 
 [NOTE]
-There is only one plugin *PDF Export* now.
+There is only one plugin now, namely *PDF Export*.
 
 
 ==== How to buy
 
-Tap *BUY* Button and entering purchase the plugin process.
+Tap the *BUY* Button to purchase the plugin.
 
 image::screenshots/purchasing-pdf-export-plugin.png[Purchasing PDF Export Plugin]
 
 [NOTE]
-When you got the PDF Export Plugin, it's changed *PDF Export Button* enabled in the Editor Screen.
+After purchase of the plugin, the *PDF Export Button* in the Editor Screen is enabled.
 
 
-== Under Developing Features
+== Features Under Development 
 
-These below features that are planned for future updates.
+The following features are planned for future updates:
 
 * Map Link
 * Previous MindBoard Data Import Plugin
 * Color Theme Plugin
-* Pen thickness Control Plugin
+* Pen Thickness Control Plugin
 
