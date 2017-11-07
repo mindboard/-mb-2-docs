@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.5">
+<meta name="generator" content="Asciidoctor 1.5.4">
 <meta name="author" content="Tomoaki Oshima">
 <title>MindBoard 2 User Guide</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -18,6 +18,7 @@ audio:not([controls]){display:none;height:0}
 [hidden],template{display:none}
 script{display:none!important}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
 a{background:transparent}
 a:focus{outline:thin dotted}
 a:active,a:hover{outline:0}
@@ -52,7 +53,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -64,6 +65,7 @@ img{-ms-interpolation-mode:bicubic}
 .text-center{text-align:center!important}
 .text-justify{text-align:justify!important}
 .hide{display:none}
+body{-webkit-font-smoothing:antialiased}
 img,object,svg{display:inline-block;vertical-align:middle}
 textarea{height:auto;min-height:50px}
 select{width:100%}
@@ -118,16 +120,13 @@ table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
 table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
 table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+body{tab-size:4}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
 h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
 .clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
 .clearfix:after,.float-group:after{clear:both}
-*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
-*:not(pre)>code.nobreak{word-wrap:normal}
-*:not(pre)>code.nowrap{white-space:nowrap}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
-em em{font-style:normal}
-strong strong{font-weight:400}
 .keyseq{color:rgba(51,51,51,.8)}
 kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
 .keyseq kbd:first-child{margin-left:0}
@@ -418,7 +417,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 <style>
 /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
 /*pre.CodeRay {background-color:#f7f7f8;}*/
@@ -552,7 +551,7 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#__4_plugins">2.5. (4)Plugins</a></li>
 </ul>
 </li>
-<li><a href="#_under_developing_features">3. Under Developing Features</a></li>
+<li><a href="#_features_under_development">3. Features Under Development</a></li>
 </ul>
 </li>
 </ul>
@@ -593,15 +592,15 @@ table.CodeRay td.code>pre{padding:0}
 <p>MindBoard 2 is a simple mind mapping application with handwriting for Android tablets.</p>
 </div>
 <div class="paragraph">
-<p>It&#8217;s supported Finger or Stylus input.<br>
-You can choose which mode you use by using the <strong>Use Native Stylus</strong> option in Settings.</p>
+<p>It supports Finger or Stylus input.<br>
+You can choose which mode to use by using the <strong>Use Native Stylus</strong> option in Settings.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_concept"><a class="anchor" href="#_concept"></a>1.2. Concept</h3>
 <div class="paragraph">
 <p>Simple and Standard<br>
-This app is being expected that the best and standard mind mapping with handwriting application for Android tablets.</p>
+This app aims to be the best and standard mind mapping with handwriting application for Android tablets.</p>
 </div>
 </div>
 <div class="sect2">
@@ -609,7 +608,7 @@ This app is being expected that the best and standard mind mapping with handwrit
 <div class="ulist">
 <ul>
 <li>
-<p>Directly outputing your thought by using Finger or Stylus</p>
+<p>Directly channel your thoughts using Finger or Stylus</p>
 </li>
 <li>
 <p>Multiple mindmaps ( central nodes ) in one document</p>
@@ -654,13 +653,13 @@ For the best mindmapping experience, it&#8217;s recommended to use Native Stylus
 <div class="sect2">
 <h3 id="_installation"><a class="anchor" href="#_installation"></a>1.5. Installation</h3>
 <div class="paragraph">
-<p>Get the <a href="https://play.google.com/store/apps/details?id=com.mindboardapps.app.mb2.client">MindBoard 2</a> on Google Play.</p>
+<p>Get the <a href="https://play.google.com/store/apps/details?id=com.mindboardapps.app.mb2.client">MindBoard 2</a> app on Google Play.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_getting_help"><a class="anchor" href="#_getting_help"></a>1.6. Getting help</h3>
 <div class="paragraph">
-<p>If you have any questions, please <a href="http://www.mindboardapps.com/contact.html">contact</a>.
+<p>If you have any questions, please <a href="http://www.mindboardapps.com/contact.html">make contact</a>.
 And also your feedback will be much appreciated.</p>
 </div>
 <div class="paragraph">
@@ -695,7 +694,7 @@ And also your feedback will be much appreciated.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Use the bottom navigation to switch the screen.</p>
+<p>Use the bottom navigation to switch between screens.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -706,8 +705,8 @@ And also your feedback will be much appreciated.</p>
 <div class="sect2">
 <h3 id="__1_file_manager"><a class="anchor" href="#__1_file_manager"></a>2.2. (1)File Manager</h3>
 <div class="paragraph">
-<p>This is for documents management.
-There are <strong>Primary</strong> / <strong>Archive</strong> Folders.</p>
+<p>This is for document management.
+There are <strong>Primary</strong> and <strong>Archive</strong> Folders.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -717,14 +716,14 @@ There are <strong>Primary</strong> / <strong>Archive</strong> Folders.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Tap the icon to switch <span class="image"><img src="images/icons/primary-folder.png" alt="Primary Folder"></span> <strong>Primary</strong> / <span class="image"><img src="images/icons/archive-folder.png" alt="Archive Folder"></span> <strong>Archive</strong></p>
+<p>Tap the icon to switch between <span class="image"><img src="images/icons/primary-folder.png" alt="Primary Folder"></span> <strong>Primary</strong> and <span class="image"><img src="images/icons/archive-folder.png" alt="Archive Folder"></span> <strong>Archive</strong></p>
 </li>
 </ul>
 </div>
 <div class="sect3">
 <h4 id="_primary_folder"><a class="anchor" href="#_primary_folder"></a>2.2.1. Primary Folder</h4>
 <div class="paragraph">
-<p>This folder manage primary documents.</p>
+<p>This folder manages primary documents.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -784,7 +783,7 @@ There are <strong>Primary</strong> / <strong>Archive</strong> Folders.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>There are two mode, <strong>Map Edit Mode</strong> and <strong>Node Edit Mode</strong>.</p>
+<p>There are two modes, <strong>Map Edit Mode</strong> and <strong>Node Edit Mode</strong>.</p>
 </div>
 <div class="sect3">
 <h4 id="_map_edit_mode"><a class="anchor" href="#_map_edit_mode"></a>2.3.1. Map Edit Mode</h4>
@@ -845,7 +844,7 @@ There are <strong>Primary</strong> / <strong>Archive</strong> Folders.</p>
 <div class="sect4">
 <h5 id="_creating_child_node"><a class="anchor" href="#_creating_child_node"></a>Creating Child Node</h5>
 <div class="paragraph">
-<p>Use <strong>a child node create handle</strong> on the node.</p>
+<p>Use the <strong>child node create handle</strong> on the node.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -855,22 +854,22 @@ There are <strong>Primary</strong> / <strong>Archive</strong> Folders.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Tap the node and changing node status to selected one &#8594; <strong>A child node create handle</strong> appear in left or right side on the node.</p>
+<p>Tap the node to change the node status to selected &#8594; The <strong>child node create handle</strong> appears on the left or right side of the node.</p>
 </li>
 <li>
-<p>Drag <strong>the child node create handle</strong>.</p>
+<p>Drag the <strong>child node create handle</strong>.</p>
 </li>
 <li>
-<p>Stop dragging proper location.</p>
+<p>Stop dragging in the desired location for the new node.</p>
 </li>
 <li>
-<p>New child node is generated.</p>
+<p>The new child node is created.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_cutting_branch_between_parent_and_child_node"><a class="anchor" href="#_cutting_branch_between_parent_and_child_node"></a>Cutting Branch between Parent and Child Node</h5>
+<h5 id="_cutting_the_branch_between_parent_and_child_node"><a class="anchor" href="#_cutting_the_branch_between_parent_and_child_node"></a>Cutting the branch between Parent and Child Node</h5>
 <div class="imageblock">
 <div class="content">
 <img src="images/screenshots/main-activity-how-to-change-node.png" alt="Cut Branch Handle">
@@ -879,10 +878,10 @@ There are <strong>Primary</strong> / <strong>Archive</strong> Folders.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Select the parent node &#8594; <strong>a cut branch handle</strong> appear on the middle of the branch.</p>
+<p>Select the parent node &#8594; the <strong>cut branch handle</strong> appears in the middle of the branch.</p>
 </li>
 <li>
-<p>Drag <strong>the cut branch handle</strong> to cut the branch. &#8594; It is changed the cut <em>child-type</em> node into <em>central-type</em> node.</p>
+<p>Drag the <strong>cut branch handle</strong> to cut the branch &#8594; the orphaned <em>child-type</em> node changes into a <em>central-type</em> node.</p>
 </li>
 </ol>
 </div>
@@ -893,7 +892,8 @@ There are <strong>Primary</strong> / <strong>Archive</strong> Folders.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Dragging a child node create handle and drop it into that central node, it&#8217;s possible to change the node to child type node again.
+It&#8217;s possible to re-parent the orphaned node to make it a child-type node again.
+To do this, drag a <strong>child node create handle</strong> from the desired parend onto the node.
 </td>
 </tr>
 </table>
@@ -957,7 +957,7 @@ Dragging a child node create handle and drop it into that central node, it&#8217
 <div class="sect3">
 <h4 id="_node_edit_mode"><a class="anchor" href="#_node_edit_mode"></a>2.3.2. Node Edit Mode</h4>
 <div class="paragraph">
-<p>This mode is for drawing your thought on a node.</p>
+<p>This mode is for drawing your thoughts on a node.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -970,7 +970,7 @@ Dragging a child node create handle and drop it into that central node, it&#8217
 <div class="ulist">
 <ul>
 <li>
-<p><span class="image"><img src="images/icons/choose-pen-color.png" alt="Choose Pen Color"></span> Set stroke color / Change the strokes color of the selected group.</p>
+<p><span class="image"><img src="images/icons/choose-pen-color.png" alt="Choose Pen Color"></span> Set stroke color / Changes the stroke color of the selected group.</p>
 </li>
 <li>
 <p><span class="image"><img src="images/icons/choose-text-color.png" alt="Choose Text Color"></span> Change the selected text color.</p>
@@ -1023,7 +1023,7 @@ Dragging a child node create handle and drop it into that central node, it&#8217
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Under checked <strong>Use Native Style</strong> in the Settings, it’s also possible to back to the <strong>Map Edit Mode</strong> by double tap guesture with a finger.
+If you have checked <strong>Use Native Style</strong> in the Settings, it’s also possible to return to the <strong>Map Edit Mode</strong> by double-tapping with a finger.
 </td>
 </tr>
 </table>
@@ -1037,7 +1037,7 @@ Under checked <strong>Use Native Style</strong> in the Settings, it’s also pos
 </div>
 <div class="paragraph">
 <p>There are four tools, Pen / Eraser / Selection / Zoom.<br>
-In order to switch a tool, tap the tool.</p>
+In order to switch to a tool, tap it.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1046,15 +1046,15 @@ In order to switch a tool, tap the tool.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Changing Pen Thickness does not support now.
-Mulitple pen thickness plugin feature is planned.
+Changing Pen Thickness is not currently supported.
+A Multiple Pen Thickness feature is planned as plugin.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_tool_switcher_in_the_case_of_checked_the_strong_use_native_stylus_strong_option"><a class="anchor" href="#_tool_switcher_in_the_case_of_checked_the_strong_use_native_stylus_strong_option"></a>Tool Switcher ( in the case of checked the <strong>Use Native Stylus</strong> option  )</h5>
+<h5 id="_tool_switcher_if_you_have_checked_the_strong_use_native_stylus_strong_option"><a class="anchor" href="#_tool_switcher_if_you_have_checked_the_strong_use_native_stylus_strong_option"></a>Tool Switcher ( if you have checked the <strong>Use Native Stylus</strong> option  )</h5>
 <div class="imageblock">
 <div class="content">
 <img src="images/screenshots/main-activity-node-edit-mode-tool-sw.png" alt="Tool Switcher">
@@ -1062,7 +1062,7 @@ Mulitple pen thickness plugin feature is planned.
 </div>
 <div class="paragraph">
 <p>There are three tools, Pen / Eraser / Selection.<br>
-In order to switch a tool, tap the tool.</p>
+In order to switch to a tool, tap it.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1071,8 +1071,8 @@ In order to switch a tool, tap the tool.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Changing Pen Thickness does not support now.
-Mulitple pen thickness plugin feature is planned.
+Changing Pen Thickness is not currently supported.
+A Multiple Pen Thickness feature is planned as plugin.
 </td>
 </tr>
 </table>
@@ -1081,20 +1081,20 @@ Mulitple pen thickness plugin feature is planned.
 <div class="sect4">
 <h5 id="_making_strokes_group"><a class="anchor" href="#_making_strokes_group"></a>Making Strokes Group</h5>
 <div class="paragraph">
-<p>It&#8217;s possible to make multiple strokes group.</p>
+<p>It&#8217;s possible to group multiple strokes.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Select <span class="image"><img src="images/icons/selection-mode.png" alt="Selection Tool"></span> the Seletion Tool on the toolswitcher.</p>
+<p>Pick the <span class="image"><img src="images/icons/selection-mode.png" alt="Selection Tool"></span> the Selection Tool on the toolswitcher.</p>
 </li>
 <li>
-<p>Enclosing strokes by using finger or stylus.</p>
+<p>Lasso the desired set of strokes by circling them using finger or stylus.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>It&#8217;s possible to manipulate for the group below.</p>
+<p>Now it&#8217;s possible to manipulate the group as follows:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1118,7 +1118,7 @@ Mulitple pen thickness plugin feature is planned.
 <div class="sect2">
 <h3 id="__3_settings"><a class="anchor" href="#__3_settings"></a>2.4. (3)Settings</h3>
 <div class="paragraph">
-<p>This is for settings.</p>
+<p>This is for Settings.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1129,7 +1129,7 @@ Mulitple pen thickness plugin feature is planned.
 <ul>
 <li>
 <p><strong>Use Native Stylus</strong> : Use native stylus or not<br>
-Please check this option when your android tablet has support for Native Stylus like S-Pen, Z-Stylus.</p>
+Please check this option if your Android tablet has support for a Native Stylus such as the S-Pen or Z-Stylus.</p>
 </li>
 </ul>
 </div>
@@ -1151,7 +1151,7 @@ Please check this option when your android tablet has support for Native Stylus 
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-There is only one plugin <strong>PDF Export</strong> now.
+There is only one plugin now, namely <strong>PDF Export</strong>.
 </td>
 </tr>
 </table>
@@ -1159,7 +1159,7 @@ There is only one plugin <strong>PDF Export</strong> now.
 <div class="sect3">
 <h4 id="_how_to_buy"><a class="anchor" href="#_how_to_buy"></a>2.5.1. How to buy</h4>
 <div class="paragraph">
-<p>Tap <strong>BUY</strong> Button and entering purchase the plugin process.</p>
+<p>Tap the <strong>BUY</strong> Button to purchase the plugin.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1173,7 +1173,7 @@ There is only one plugin <strong>PDF Export</strong> now.
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-When you got the PDF Export Plugin, it&#8217;s changed <strong>PDF Export Button</strong> enabled in the Editor Screen.
+After purchase of the plugin, the <strong>PDF Export Button</strong> in the Editor Screen is enabled.
 </td>
 </tr>
 </table>
@@ -1183,10 +1183,10 @@ When you got the PDF Export Plugin, it&#8217;s changed <strong>PDF Export Button
 </div>
 </div>
 <div class="sect1">
-<h2 id="_under_developing_features"><a class="anchor" href="#_under_developing_features"></a>3. Under Developing Features</h2>
+<h2 id="_features_under_development"><a class="anchor" href="#_features_under_development"></a>3. Features Under Development</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>These below features that are planned for future updates.</p>
+<p>The following features are planned for future updates:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1200,7 +1200,7 @@ When you got the PDF Export Plugin, it&#8217;s changed <strong>PDF Export Button
 <p>Color Theme Plugin</p>
 </li>
 <li>
-<p>Pen thickness Control Plugin</p>
+<p>Pen Thickness Control Plugin</p>
 </li>
 </ul>
 </div>
@@ -1209,7 +1209,7 @@ When you got the PDF Export Plugin, it&#8217;s changed <strong>PDF Export Button
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-26 09:51:57 JST
+Last updated 2017-11-07 12:28:22 JST
 </div>
 </div>
 </body>
