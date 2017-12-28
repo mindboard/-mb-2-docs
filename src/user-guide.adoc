@@ -85,8 +85,10 @@ image::screenshots/file-manager-primary.png[File Manager (Primary Folder)]
 * image:icons/new-page.png[New Document] Add new document
 * image:icons/download-page.png[Download Document] Open document from Google Drive
 * image:icons/upload-page.png[Upload Document] Save As selected document into Google Drive
-* image:icons/sync-page.png[Sync Document] Sync selected document with Google Drive
 * image:icons/move-to-archive.png[Move Document to Archive] Move selected document into Archive Folder
+
+[NOTE]
+The sync mark image:icons/sync-page.png[Sync Mark] appears on the preview icon right top corner if it's opened from Google Drive. 
 
 
 ==== Archive Folder
@@ -114,10 +116,14 @@ This mode is for freely creating and organizing nodes in order to do mind mappin
 
 image::screenshots/editor-map-edit-mode.png[Editor (Map Edit Mode)]
 
+Map Title (Left-Top)
+
+* Tap a title text and you can change it.
 
 Toolbar (Right-Top)
 
 * image:icons/change-branch-color.png[Change Branch Color] Change selected node branch color
+* image:icons/sync-page.png[Sync Document] Sync this document with Google Drive File ( if it's releated )
 * image:icons/export-as-pdf.png[Export as PDF] Export current document as PDF into Google Drive ( PDF Export Plugin is needed. )
 
 Toolbar (Left-Bottom)
@@ -157,7 +163,7 @@ image::screenshots/main-activity-how-to-change-node.png[Cut Branch Handle]
 
 [NOTE]
 It's possible to re-parent the orphaned node to make it a child-type node again.
-To do this, drag a *child node create handle* from the desired parend onto the node.
+To do this, drag a *child node create handle* from the desired parent onto the node.
 
 
 ===== Moving Node
@@ -192,6 +198,10 @@ This mode is for drawing your thoughts on a node.
 image::screenshots/editor-node-edit-mode.png[Editor (Node Edit Mode)]
 
 
+Tool Switcher ( Left-Top )
+
+* There are some tool icons here. In details, See the next *Tool Switcher* section.
+
 
 Toolbar ( Right-Top )
 
@@ -210,12 +220,12 @@ Toolbar ( Right-Bottom )
 * image:icons/redo.png[Redo] Redo
 
 
-Right-Top corner
+CloseButton ( Right-Top )
 
 * image:icons/close-node-edit-mode.png[Back To Map Edit Mode] Back to the *Map Edit Mode*
 
 [NOTE]
-If you have checked *Use Native Style* in the Settings, it’s also possible to return to the *Map Edit Mode* by double-tapping with a finger.
+If you have checked *Use Native Style* in the Settings, it's also possible to return to the *Map Edit Mode* by __double-tapping__ with a finger.
 
 
 ===== Tool Switcher
@@ -246,7 +256,7 @@ A Multiple Pen Thickness feature is planned as plugin.
 
 It's possible to group multiple strokes.
 
-1. Pick the image:icons/selection-mode.png[Selection Tool] the Selection Tool on the toolswitcher.
+1. Pick the image:icons/selection-mode.png[Selection Tool] the Selection Tool on the Tool-Switcher.
 1. Lasso the desired set of strokes by circling them using finger or stylus.
 
 
