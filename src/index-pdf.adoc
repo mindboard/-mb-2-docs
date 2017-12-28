@@ -8,6 +8,6 @@ Tomoaki Oshima <http://www.mindboardapps.com/>
 :icons: font
 :imagesdir: ../images
 
-This document explains MindBoard 2 Version 0.7.1.
+This document explains MindBoard 2 Version 0.7.5.
 
 include::user-guide.adoc[]
