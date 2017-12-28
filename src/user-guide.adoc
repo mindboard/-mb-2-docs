@@ -88,7 +88,7 @@ image::screenshots/file-manager-primary.png[File Manager (Primary Folder)]
 * image:icons/move-to-archive.png[Move Document to Archive] Move selected document into Archive Folder
 
 [NOTE]
-The sync mark image:icons/sync-page.png[Sync Mark] appears on the preview icon right top corner if it's opened from Google Drive. 
+The sync mark image:icons/sync-page.png[Sync Mark] appears on the document preview icon right top corner if it's opened from Google Drive. 
 
 
 ==== Archive Folder
@@ -175,6 +175,8 @@ To do this, drag a *child node create handle* from the desired parent onto the n
 
 1. Select a node.
 1. Drag a *right-bottom resize handle* of the node selection border.
+
+image::screenshots/node-resize-handle.png[Node Resize Handle]
 
 
 ===== Collapsing or Expanding Node
