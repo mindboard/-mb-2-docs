@@ -88,7 +88,7 @@ image::screenshots/file-manager-primary.png[File Manager (Primary Folder)]
 * image:icons/move-to-archive.png[Move Document to Archive] Move selected document into Archive Folder
 
 [NOTE]
-The sync mark image:icons/sync-page.png[Sync Mark] appears on the document preview icon right top corner if it's opened from Google Drive. 
+The sync mark image:icons/sync-page.png[Sync Mark] appears on the document preview icon right top corner if it's saved into or opened from Google Drive. 
 
 
 ==== Archive Folder
