@@ -30,7 +30,7 @@ This app aims to be the best and standard mind mapping with handwriting applicat
 
 * Android 4.4 Kitkat or newer.
 
-This app is designed for Android Tables.
+This app is designed for Android tables.
 
 [NOTE]
 For the best mindmapping experience, it's recommended to use Native Stylus ( S-Pen or Z-Stylus ) Android tablets.
@@ -56,17 +56,17 @@ https://www.facebook.com/mindboardapps[Facebook] / https://twitter.com/mindboard
 
 There are four screens.
 
-- (1)File Manager
-- (2)Editor
-- (3)Settings
-- (4)Plugins
+- (1) File Manager
+- (2) Editor
+- (3) Settings
+- (4) Plugins
 
 Use the bottom navigation to switch between screens. 
 
 image::screenshots/bottom-navigation-overview.png[Bottom Navigation]
 
 
-=== (1)File Manager
+=== (1) File Manager
 
 This is for document management.
 There are *Primary* and *Archive* Folders.
@@ -101,7 +101,7 @@ image::screenshots/file-manager-archive.png[File Manager (Archive Folder)]
 * image:icons/empty-trash.png[Empty Archive] Delete all documents in this folder.
 
 
-=== (2)Editor
+=== (2) Editor
 
 This is for mind mapping.
 
@@ -270,7 +270,7 @@ Now it's possible to manipulate the group as follows:
 * Delete the group
 
 
-=== (3)Settings
+=== (3) Settings
 
 This is for Settings.
 
@@ -280,7 +280,7 @@ image::screenshots/settings.png[Settings]
 Please check this option if your Android tablet has support for a Native Stylus such as the S-Pen or Z-Stylus.
 
 
-=== (4)Plugins
+=== (4) Plugins
 
 This is for Plugins.
 
