@@ -30,7 +30,7 @@ This app aims to be the best and standard mind mapping with handwriting applicat
 
 * Android 4.4 Kitkat or newer.
 
-This app is designed for Android tables.
+This app is designed for Android tablets.
 
 [NOTE]
 For the best mindmapping experience, it's recommended to use Native Stylus ( S-Pen or Z-Stylus ) Android tablets.
