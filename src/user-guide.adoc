@@ -93,7 +93,7 @@ The sync mark image:icons/sync-page.png[Sync Mark] appears on the document previ
 
 ==== Archive Folder
 
-This folder manage archive documents.
+This folder manages archived documents.
 
 image::screenshots/file-manager-archive.png[File Manager (Archive Folder)]
 
@@ -123,7 +123,7 @@ Map Title (Left-Top)
 Toolbar (Right-Top)
 
 * image:icons/change-branch-color.png[Change Branch Color] Change selected node branch color
-* image:icons/sync-page.png[Sync Document] Sync this document with Google Drive File ( if it's releated )
+* image:icons/sync-page.png[Sync Document] Sync this document with Google Drive File ( if it's linked )
 * image:icons/export-as-pdf.png[Export as PDF] Export current document as PDF into Google Drive ( PDF Export Plugin is needed. )
 
 Toolbar (Left-Bottom)
